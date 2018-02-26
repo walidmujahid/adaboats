@@ -1,0 +1,198 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Theme URI:    wp-content/themes/twentyseventeen-child
+ Description:  Twenty Seventeen Child Theme
+ Author:       Meffy Gomez, Walid Mujahid وليد مجاهد
+ Author URI:   https://github.com/walidmujahid
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         website, top-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-seventeen-child
+*/
+
+
+.site-info, .site-footer, .entry-header, .comments-area, .nf-form-fields-required { display: none; }
+
+/* a, a:link, a:visited, a:hover { text-decoration:none!important; } */
+/* #photos-link span a, a:link, a:visited, a:hover { text-decoration:none!important; }  */
+
+/* #photos-link span a { border-bottom:none; } */
+
+#panel1, #panel2, #panel3, #panel4  { border: none; }
+/* #panel4 { display: none !important; } */
+#panel4 {
+	background-image: url("http://a81.cbb.myftpupload.com/wp-content/uploads/2014/12/Ada-Boats-About-Us.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+}
+#panel4 .entry-content {
+	width: 100% !important;
+	display: inline-block;
+}
+#panel4 .entry-content div h2 {
+	font-size: 400%;
+	color: white;
+}
+#panel4 .entry-content div p {
+	color: white;
+	text-transform: uppercase;
+	font-size: 200%;
+	padding: 0;
+	line-height: 30%;
+}
+.gallery-icon a {
+	pointer-events: none;
+	cursor: default;
+}
+
+#primary .entry-content {
+  width: 100% !important;
+}
+#statistics-section{
+	display: flex;
+	padding-right: 50%;
+}
+#happy-customers, #custom-features, #ada-compatible, #total-emissions {
+	margin: 5%;
+	flex: 1;
+}
+#happy-customers__text, #custom-features__text, #ada-compatible__text, #total-emissions__text {
+	padding-top: 15%;
+}
+.site-title a {
+	background-image: url('http://a81.cbb.myftpupload.com/wp-content/uploads/2017/11/ablecat-200x104.png');
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -9999px;
+	padding-bottom: 100px;
+}
+
+.site-description {
+	font-size: 27px;
+}
+
+/* .navigation-top {
+	position: fixed;
+} */
+
+/* #panel3 .entry-content { column-count: 2; } */
+/* 
+#panel3-text { 
+	float: left;
+	width: 50%;
+	font-size: 20px;
+}
+#panel3-img { float: right; } */
+#panel3-wrapper { display : grid; }
+
+.panel-content .wrap {
+	padding-top: 1em;
+}
+
+
+/* #panel4 {  
+	background-color: #f6f6f6; 
+	height: 70vh;
+} */
+/* #panel4 .entry-content {
+	position: absolute;
+	top: 300%;
+	left: -1%;
+	bottom: auto;
+	vertical-align: middle;
+	float:none;
+	margin: 0;
+	padding: 0;
+} */
+/* #panel4 .entry-content {
+	position: relative;
+	padding-top: 50%;
+	padding-bottom: 300%;
+}  */
+
+
+
+#panel1 { border-color: #005fbf }
+#panel1 .entry-content {
+	margin-top: -5%;
+}
+#panel5 .wrap .entry-content { 
+	width: 100%;
+	
+}
+
+@media (min-width: 1200px) {
+	.custom-header {
+		position: relative;
+		padding-top: 70px;
+	}
+	.navigation-top {
+		background-color: transparent;
+		border: none;
+		width: 100%;
+		height: 120px;
+		top: 0;
+		font-size: 130%;
+		bottom: auto;
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 7;
+	}
+	.admin-bar .navigation-top { top: 32px; }
+	.navigation-top .wrap {
+    	max-width: 100%;
+	}
+	.navbar-transition {
+		background-color: black !important;
+		transition: background-color 1s ease-in-out;
+		-moz-transition: background-color 1s ease-in-out;
+		-webkit-transition: background-color 1s ease-in-out;
+		-o-transition: background-color 1s ease-in-out;
+	}
+	.navigation-top .menu-item > a, .navigation-top .page_item > a {color: #fff;}
+	.navigation-top .menu-item > a:hover, .navigation-top .page_item > a:hover {color: #D31E27;}
+	.site-branding {
+		text-align: center;
+		width: 100%;
+	}
+	#menu-item-16047 {
+		width: 30%;
+		text-indent: -9999px;
+	}
+	#menu-item-16047 a {
+		background-image: url('http://a81.cbb.myftpupload.com/wp-content/uploads/2017/11/ablecat-200x104.png');
+		background-repeat: no-repeat;
+		background-position: 50px -3px;
+		display: block;
+		padding-bottom: 70px;
+	}
+	
+}
+
+@media (min-width: 800px) {
+		.site-title {
+		padding-left: 35%;
+	}
+}
+
+/* @media (min-height: 630px) {
+	#panel4 .entry-content{
+		padding-top: 25%;
+	}
+	
+	#panel4-entry-content {
+		border: 3px solid black;
+		position: relative;
+		float: left;
+		margin-top: 30%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		ms-transform: translate(-50%, -50%);
+	}
+} */
